@@ -234,6 +234,8 @@ ul {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
+    gap: 0;
+    justify-content: center;
 }
 
 .main-nav>li {
@@ -349,7 +351,7 @@ ul {
 /* ===== HERO / CARROSSEL ===== */
 .hero-carousel {
     position: relative;
-    background: linear-gradient(120deg, #e9e3da, #e5ded2);
+    background: #dad8d8;
     overflow: hidden;
 }
 
