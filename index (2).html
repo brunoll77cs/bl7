@@ -5,20 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Câmara Municipal de Solânea</title>
-
-  <!-- ===== FONT AWESOME ===== -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon solanea.png" type="image/x-icon">
 </head>
 
 <body>
-
-  <!-- ===== TOPO UTILITÁRIO ===== -->
-  <div class="topbar">
+<div class="top">
     <div class="container">
-      <span class="topbar-titulo">
+      <span class="top-titulo">
         <i class="fa-solid fa-landmark"></i> Câmara Municipal de Solânea
       </span>
 
@@ -28,7 +22,7 @@
       <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Pesquisa</a>
       <a href="#"><i class="fa-solid fa-universal-access"></i> Acessibilidade</a>
 
-      <div class="socials">
+      <div class="social">
         <a href="https://www.facebook.com/profile.php?id=100068889412566" target="_blank" rel="noopener">
           <i class="fa-brands fa-facebook-f"></i>
         </a>
@@ -41,30 +35,17 @@
       </div>
     </div>
   </div>
-
-  <!-- ===== HEADER: banner + nav ===== -->
-  <div class="header-banner">
-    <div class="container">
-      <div class="logo-box">
-        <div class="areaheader">
-          <a href="#" onclick="location.reload(); return false;">
-            <img src="logovazada.png" alt="Câmara Municipal de Solânea">
-          </a>
-        </div>
-      </div>
-    </div>
+<div class="cabecalho">
+    <img class="fundo" src="WhatsApp Image 2026-08-14 at 13.25.53.jpeg" alt="">
+    <img class="logo" src="logovazada.png" alt="">
   </div>
-
-  <!-- ===== MENU DE NAVEGAÇÃO ===== -->
-  <nav class="navbar">
+<nav class="nav">
     <div class="container">
-      <a class="nav-logo" href="#"></a>
-      
 
-      <ul class="main-nav">
-        <li class="has-dropdown">
-          <a href="#">INSTITUCIONAL <span class="caret">▾</span></a>
-          <ul class="dropdown">
+      <ul class="menu">
+        <li class="item-menu">
+          <a href="#">INSTITUCIONAL <span class="seta">▾</span></a>
+          <ul class="submenu">
             <li><a href="#">Sobre a Câmara</a></li>
             <li><a href="#">Ouvidoria</a></li>
             <li><a href="#">E-SIC</a></li>
@@ -75,15 +56,26 @@
             <li><a href="#">Papel da Câmara</a></li>
           </ul>
         </li>
-        <li class="has-dropdown">
-          <a href="index (2).html">PARLAMENTARES <span class="caret">▾</span></a>
-          <ul class="dropdown">
-            <li><a href="#">CARLINHOS</a></li>
+        <li class="item-menu">
+          <a href="index (2).html">PARLAMENTARES <span class="seta">▾</span></a>
+          <ul class="submenu">
+            <li><a href="jose.html">José Porfírio dos Santos</a></li>
+            <li><a href="#">Luís Carlos Dantas</a></li>
+            <li><a href="#">Vanda Rosália da Silva Rodrigues</a></li>
+            <li><a href="#">Francisco de Assis</a></li>
+            <li><a href="#">Edvanildo de Medeiros Santos Júnior</a></li>
+            <li><a href="#">Genival Francisco dos Santos</a></li>
+            <li><a href="#">José Carlos da Silva</a></li>
+            <li><a href="#">José Jaelson Matias dos Santos </a></li>
+            <li><a href="#">Josenildo Costa Silva</a></li>
+            <li><a href="#">Maria Patrícia Pereira Lima</a></li>
+            <li><a href="#">Pedro Prudencio da Silva</a></li>
+
           </ul>
         </li>
-        <li class="has-dropdown">
-          <a href="#">LEGISLATIVO <span class="caret">▾</span></a>
-          <ul class="dropdown">
+        <li class="item-menu">
+          <a href="#">LEGISLATIVO <span class="seta">▾</span></a>
+          <ul class="submenu">
             <li><a href="#parlamentares-section">Parlamentares</a></li>
             <li><a href="#">Galeria de Vereadores</a></li>
             <li><a href="#">Mesa Diretora</a></li>
@@ -94,84 +86,80 @@
           </ul>
         </li>
         <li><a href="#">TRANSPARÊNCIA</a></li>
-        <li class="has-dropdown">
-          <a href="#">GESTÃO FISCAL <span class="caret">▾</span></a>
-          <ul class="dropdown">
+        <li class="item-menu">
+          <a href="#">GESTÃO FISCAL <span class="seta">▾</span></a>
+          <ul class="submenu">
             <li><a href="#">PCS - Prestação de Contas de Gestão</a></li>
             <li><a href="#">RGF - Relatório de Gestão Fiscal</a></li>
           </ul>
         </li>
-        <li class="has-dropdown">
-          <a href="#">INFORME <span class="caret">▾</span></a>
-          <ul class="dropdown">
+        <li class="item-menu">
+          <a href="#">INFORME <span class="seta">▾</span></a>
+          <ul class="submenu">
             <li><a href="#noticias-section">Notícias</a></li>
             <li><a href="#">Vídeos</a></li>
             <li><a href="#">Links Úteis</a></li>
           </ul>
         </li>
-        <li class="has-dropdown">
-          <a href="#">SERVIÇOS <span class="caret">▾</span></a>
-          <ul class="dropdown">
+        <li class="item-menu">
+          <a href="#">SERVIÇOS <span class="seta">▾</span></a>
+          <ul class="submenu">
             <li><a href="#">Contracheque Online</a></li>
           </ul>
         </li>
       </ul>
 
-      <button class="nav-toggle" aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button>
+      <button class="menu-btn" aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button>
     </div>
   </nav>
+<section class="hero">
+    <button class="hero-btn prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="hero-btn next" aria-label="Próximo"><i class="fa-solid fa-chevron-right"></i></button>
 
-  <!-- ===== HERO / CARROSSEL ===== -->
-  <section class="hero-carousel">
-    <button class="hero-nav-btn prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
-    <button class="hero-nav-btn next" aria-label="Próximo"><i class="fa-solid fa-chevron-right"></i></button>
-
-    <div class="hero-art">
+    <div class="hero-img">
       <img src="lgpd.png" alt="Ilustração sobre a LGPD">
     </div>
 
-    <div class="hero-dots">
+    <div class="hero-pontos">
       <span class="active"></span>
       <span></span>
     </div>
   </section>
-
-  <!-- ===== SERVIÇOS ===== -->
-  <section class="services">
+<section class="servicos">
     <div class="container">
-      <div class="services-grid">
-        <a class="service-card" href="#parlamentares-section">
-          <div class="service-icon"><i class="fa-solid fa-landmark"></i></div>
+      <div class="cards">
+        <a class="card" href="#parlamentares-section">
+          <div class="icone"><i class="fa-solid fa-landmark"></i></div>
           <h4>Vereadores</h4>
           <p>Informações e contato dos parlamentares</p>
           <span class="link">ACESSAR</span>
         </a>
-        <a class="service-card" href="#">
-          <div class="service-icon"><i class="fa-solid fa-computer"></i></div>
+        <a class="card" href="#">
+          <div class="icone"><i class="fa-solid fa-computer"></i></div>
           <h4>Serviços Online</h4>
           <p>Governo digital</p>
           <span class="link">ACESSAR</span>
         </a>
-        <a class="service-card" href="#">
-          <div class="service-icon"><i class="fa-solid fa-users"></i></div>
+        <a class="card" href="#">
+          <div class="icone"><i class="fa-solid fa-users"></i></div>
           <h4>Comissões Legislativas</h4>
           <p>Informações sobre as comissões</p>
           <span class="link">ACESSAR</span>
         </a>
-        <a class="service-card" href="#">
-          <div class="service-icon"><i class="fa-solid fa-microphone"></i></div>
+        <a class="card" href="#">
+          <div class="icone"><i class="fa-solid fa-microphone"></i></div>
           <h4>Sessões Legislativas</h4>
           <p>Cronograma, atas e pautas</p>
           <span class="link">ACESSAR</span>
         </a>
-        <a class="service-card" href="#">
-          <div class="service-icon"><i class="fa-solid fa-file-lines"></i></div>
+        <a class="card" href="#">
+          <div class="icone"><i class="fa-solid fa-file-lines"></i></div>
           <h4>Matérias Legislativas</h4>
           <p>Consulta e acompanhamento</p>
           <span class="link">ACESSAR</span>
         </a>
-        <a class="service-card" href="#">
-          <div class="service-icon"><i class="fa-solid fa-book"></i></div>
+        <a class="card" href="#">
+          <div class="icone"><i class="fa-solid fa-book"></i></div>
           <h4>Legislação Municipal</h4>
           <p>Acervo de leis</p>
           <span class="link">ACESSAR</span>
@@ -179,82 +167,74 @@
       </div>
     </div>
   </section>
-
-  <!-- ===== NOTÍCIAS ===== -->
-  <section class="section" id="noticias-section">
+<section class="section" id="noticias-section">
     <div class="container">
-      <div class="section-head">
+      <div class="titulo">
         <h3><i class="fa-solid fa-newspaper"></i> Últimas notícias</h3>
-        <a class="see-more" href="#">Mais notícias <i class="fa-solid fa-arrow-right"></i></a>
+        <a class="mais" href="#">Mais notícias <i class="fa-solid fa-arrow-right"></i></a>
       </div>
-      <div class="news-grid">
-        <article class="news-card">
-          <div class="thumb">
+      <div class="noticias">
+        <article class="noticia">
+          <div class="imagem">
             <img src="Capa190.jpg" alt="Notícia" loading="lazy">
           </div>
-          <div class="news-body">
-            <span class="news-tag"><i class="fa-solid fa-tag"></i> Administração</span>
-            <span class="news-date"><i class="fa-regular fa-calendar"></i> 13/06/2026</span>
+          <div class="corpo">
+            <span class="tag"><i class="fa-solid fa-tag"></i> Administração</span>
+            <span class="data"><i class="fa-regular fa-calendar"></i> 13/06/2026</span>
             <h4>Celebrar o dia de Santo Antônio!</h4>
             <p>A Câmara Municipal se uniu aos moradores em uma data tradicional celebrada com fé e festa na cidade.</p>
-            <a class="read-more" href="#">Continue lendo <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="ler" href="#">Continue lendo <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </article>
-        <article class="news-card">
-          <div class="thumb">
+        <article class="noticia">
+          <div class="imagem">
             <img src="Capa189.jpg" alt="Notícia" loading="lazy">
           </div>
-          <div class="news-body">
-            <span class="news-tag"><i class="fa-solid fa-tag"></i> Administração</span>
-            <span class="news-date"><i class="fa-regular fa-calendar"></i> 04/06/2026</span>
+          <div class="corpo">
+            <span class="tag"><i class="fa-solid fa-tag"></i> Administração</span>
+            <span class="data"><i class="fa-regular fa-calendar"></i> 04/06/2026</span>
             <h4>CorpusChristi!</h4>
             <p>O calendário municipal registrou um momento de recolhimento e renovação para os fiéis da cidade.</p>
-            <a class="read-more" href="#">Continue lendo <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="ler" href="#">Continue lendo <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </article>
-        <article class="news-card">
-          <div class="thumb">
+        <article class="noticia">
+          <div class="imagem">
             <img src="Capa188.jpg" alt="Notícia" loading="lazy">
           </div>
-          <div class="news-body">
-            <span class="news-tag"><i class="fa-solid fa-tag"></i> Administração</span>
-            <span class="news-date"><i class="fa-regular fa-calendar"></i> 02/06/2026</span>
+          <div class="corpo">
+            <span class="tag"><i class="fa-solid fa-tag"></i> Administração</span>
+            <span class="data"><i class="fa-regular fa-calendar"></i> 02/06/2026</span>
             <h4>RECESSO PARLAMENTAR</h4>
             <p>As sessões legislativas ficam suspensas temporariamente, mas o atendimento ao público segue normalmente.
             </p>
-            <a class="read-more" href="#">Continue lendo <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="ler" href="#">Continue lendo <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </article>
       </div>
     </div>
   </section>
-
-  <!-- ===== VEREADORES ===== -->
-  <section class="section section-bg" id="parlamentares-section">
+<section class="section section-bg" id="parlamentares-section">
     <div class="container">
-      <div class="section-head">
+      <div class="titulo">
         <h3><i class="fa-solid fa-users"></i> Legislativo</h3>
-        <a class="see-more" href="#">Mais sobre <i class="fa-solid fa-arrow-right"></i></a>
+        <a class="mais" href="#">Mais sobre <i class="fa-solid fa-arrow-right"></i></a>
       </div>
-      <div class="vereadores-grid"></div>
+      <div class="vereadores"></div>
     </div>
   </section>
-
-  <!-- ===== MAPA ===== -->
-  <div class="map-wrap">
+<div class="mapa">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.103623902854!2d-35.67001252412594!3d-6.757216766077303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7adc5ee29cbcc17%3A0x1a44aeca766734e3!2sC%C3%A2mara%20Municipal%20de%20Sol%C3%A2nea!5e0!3m2!1spt-PT!2sbr!4v1708017691455!5m2!1spt-PT!2sbr"
       loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="site-footer">
+<footer class="rodape">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-logo">
+      <div class="rodape-grid">
+        <div class="rodape-logo">
           <img src="logovazada.png" alt="Câmara Municipal de Solânea">
           <p>Legislatura 2025/2028<br>Presidente José Porfírio</p>
-          <div class="footer-socials">
+          <div class="rodape-social">
             <a href="https://www.facebook.com/profile.php?id=100068889412566" target="_blank" rel="noopener">
               <i class="fa-brands fa-facebook-f"></i>
             </a>
@@ -279,21 +259,17 @@
           <p><i class="fa-solid fa-envelope"></i> cmsolpb@gmail.com</p>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="rodape-final">
         <span>© 2026 <a href="#"><i class="fa-regular fa-copyright"></i> Câmara Municipal de Solânea</a>. Todos os
           direitos reservados.</span>
         <span>Réplica de site desenvolvida para fins de trabalho.</span>
       </div>
     </div>
   </footer>
-
-  <!-- ===== BOTÃO VOLTAR AO TOPO ===== -->
-  <button class="back-to-top" aria-label="Voltar ao topo">
+<button class="topo" aria-label="Voltar ao topo">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
-
-  <!-- ===== SCRIPTS ===== -->
-  <script src="js/vereadores-data.js"></script>
+<script src="js/vereadores-data.js"></script>
   <script src="js/script.js"></script>
 
 </body>
