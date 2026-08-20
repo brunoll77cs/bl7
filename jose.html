@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" href="favicon solanea.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -114,9 +115,9 @@
     <main>
         <section class="breadcrump">
             <div class="container">
-                <a href="solanea.html">Início</a>
+                <a href="index.html">Início</a>
                 <span>&gt;</span>
-                <a href="vereadores.html">Vereadores</a>
+                <a href="galeria.html">Vereadores</a>
                 <span>&gt;</span>
                 <span>Detalhes</span>
             </div>
@@ -137,30 +138,37 @@
         <section class="dados-vereador">
             <div class="container">
                 <div class="dados-campo">
-                    <div class="dados coluna">
+                    <div class="dados-coluna">
                         <h4>LEGISLATURA ATUAL - 2025/2028</h4>
-                        <P>Quantidade de Matérias 13, representando 4,73% do total das matérias</P>
-                        <div class="barra-progresso">
-                                <div class="barra-preenchida" style="width:4.73%;">
+                        <div class="dados-metrica">
+                            <div class="barra-progresso">
+                                <div class="barra-preenchida" style="width: 4.73%;"></div>
                             </div>
-                            <p>Presente em 39 sessões, representanto 92,86%</p>
+                            <p>Quantidade de Matérias 13, representando 4,73% do total das matérias</p>
                         </div>
-                            <div class="barra-preenchida" style="width: 92.86%;">
+                        <div class="dados-metrica">
+                            <div class="barra-progresso">
+                                <div class="barra-preenchida" style="width: 92.86%;"></div>
+                            </div>
+                            <p>Presente em 39 sessões, representando 92,86%</p>
                         </div>
                     </div>
 
-                        <div class="dados-coluna">
-                            <h4>EXERCÍCIO ATUAL - 2026</h4>
-                            <P>Quantidade de Matérias 4, representando 5,41% do total das matérias</P>
+                    <div class="dados-coluna">
+                        <h4>EXERCÍCIO ATUAL - 2026</h4>
+                        <div class="dados-metrica">
                             <div class="barra-progresso">
-                                <div class="barra-preenchida" style="width:5.41%;">
-                                </div>
-                                <p>Presente em 11 sessões, representanto 91,67%</p>
+                                <div class="barra-preenchida" style="width: 5.41%;"></div>
                             </div>
-                            <div class="barra-preenchida" style="width: 91.67%;">
+                            <p>Quantidade de Matérias 4, representando 5,41% do total das matérias</p>
+                        </div>
+                        <div class="dados-metrica">
+                            <div class="barra-progresso">
+                                <div class="barra-preenchida" style="width: 91.67%;"></div>
                             </div>
+                            <p>Presente em 11 sessões, representando 91,67%</p>
+                        </div>
                     </div>
-                </div>
                 <p class="dados-extra">Quantidade de Matérias subscritas pelo vereador: 1</p>
                 <p class="dados-extra"><i class="fa-regular fa-clock"></i>Dados atuaizados em: 26/05/2026</p>    
             </div>
@@ -172,10 +180,10 @@
                 <li><a href="#tab-producao" class="aba-ativa">Produção Legislativa</a></li>
                 <li><a href="#tab-sessoes">Participação em Sessões</a></li>
                 <li><a href="#tab-mandatos">Histórico de Mandatos</a></li>
-                <li><a href="#tab-filtracao">Filtração partidária</a></li>
+                <li><a href="#tab-filiacao">Filiação partidária</a></li>
                 <li><a href="#tab-biografia">Biografia</a></li>
             </ul>
-            <div class="aba-conteudo" id="tab-producao">
+            <div class="aba-conteudo ativo" id="tab-producao">
                 <h4>Últimas matérias vinculadas</h4>
 
                 <div class="materia-item">
@@ -192,12 +200,96 @@
                     <p class="materia-situacao">Situação: Aprovada</p>
                     <a href="#" class="botao-acessar">Acessar</a>
                 </div>
+            </div>
 
+            <div class="aba-conteudo" id="tab-sessoes">
+                <h4>Sessões ordinárias</h4>
+                <div class="sessoes-lista">
+                    <div class="sessao-item">
+                        <div class="sessao-info">
+                            <strong>SESSÃO ORDINÁRIA: 11/2026 <small><i class="fa-regular fa-calendar"></i> 26/05/2026</small></strong>
+                            <span>11ª (Décima Primeira) Sessão Ordinária de 26 de Maio de 2026</span>
+                        </div>
+                        <a href="#" class="botao-sessao"><i class="fa-solid fa-eye"></i> Acessar</a>
+                    </div>
+                    <div class="sessao-item">
+                        <div class="sessao-info">
+                            <strong>SESSÃO ORDINÁRIA: 10/2026 <small><i class="fa-regular fa-calendar"></i> 19/05/2026</small></strong>
+                            <span>10ª (Décima) Sessão Ordinária de 19 de Maio de 2026</span>
+                        </div>
+                        <a href="#" class="botao-sessao"><i class="fa-solid fa-eye"></i> Acessar</a>
+                    </div>
+                    <div class="sessao-item">
+                        <div class="sessao-info">
+                            <strong>SESSÃO ORDINÁRIA: 09/2026 <small><i class="fa-regular fa-calendar"></i> 12/05/2026</small></strong>
+                            <span>09ª (Nona) Sessão Ordinária de 12 de Maio de 2026</span>
+                        </div>
+                        <a href="#" class="botao-sessao"><i class="fa-solid fa-eye"></i> Acessar</a>
+                    </div>
+                    <div class="sessao-item">
+                        <div class="sessao-info">
+                            <strong>SESSÃO ORDINÁRIA: 08/2026 <small><i class="fa-regular fa-calendar"></i> 05/05/2026</small></strong>
+                            <span>08ª (Oitava) Sessão Ordinária de 5 de Maio de 2026</span>
+                        </div>
+                        <a href="#" class="botao-sessao"><i class="fa-solid fa-eye"></i> Acessar</a>
+                    </div>
+                    <div class="sessao-item">
+                        <div class="sessao-info">
+                            <strong>SESSÃO ORDINÁRIA: 07/2026 <small><i class="fa-regular fa-calendar"></i> 28/04/2026</small></strong>
+                            <span>07ª (Sétima) Sessão Ordinária de 28 de Abril de 2026</span>
+                        </div>
+                        <a href="#" class="botao-sessao"><i class="fa-solid fa-eye"></i> Acessar</a>
+                    </div>
+                    <div class="sessao-item">
+                        <div class="sessao-info">
+                            <strong>SESSÃO ORDINÁRIA: 06/2026 <small><i class="fa-regular fa-calendar"></i> 14/04/2026</small></strong>
+                            <span>06ª (Sexta) Sessão Ordinária de 14 de Abril de 2026</span>
+                        </div>
+                        <a href="#" class="botao-sessao"><i class="fa-solid fa-eye"></i> Acessar</a>
+                    </div>
                 </div>
+            </div>
+
+            <div class="aba-conteudo aba-mandatos" id="tab-mandatos">
+                <h4>Informações dos mandatos</h4>
+                <table class="tabela-mandatos">
+                    <thead>
+                        <tr><th>Cargo</th><th>Vínculo</th><th>Legislatura</th><th>Período</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Presidente</td><td>Mesa Diretora</td><td>17ª (Décima Sétima) Legislatura (2025 - 2028)</td><td>08/01/2025</td></tr>
+                        <tr><td>Vice-Presidente</td><td>Mesa Diretora</td><td>16ª (Décima Sexta) Legislatura (2021 - 2024)</td><td>01/01/2017 à 31/12/2020</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="aba-conteudo" id="tab-filiacao">
+                <h4>Filiação partidária</h4>
+                <table class="tabela-filiacao">
+                    <thead>
+                        <tr><th>Período</th><th>Sigla </th><th>Partido</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>01/01/202l</td><td>UNIÃO</td><td>UNIÃO BRASIL</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="aba-conteudo" id="tab-biografia">
+                <h4>Biografia</h4>
+                <p class="texto-aba">José Porfírio dos Santos, conhecido politicamente como Minininho, é natural do município de Solânea, Paraíba, nascido em 24 de junho de 1970. Com formação de ensino fundamental completo, construiu sua trajetória profissional como comerciante, desenvolvendo uma atuação marcada pelo empreendedorismo, pela vivência no comércio local e pelo contato direto com a população, o que lhe proporcionou ampla compreensão das necessidades da comunidade e dos desafios econômicos do município. Ao longo dos anos, consolidou sua presença na vida comunitária, contribuindo para o fortalecimento da economia local e acompanhando de perto as demandas sociais. Filiado ao União Brasil, exerce o mandato de vereador com responsabilidade, transparência e dedicação ao interesse público, atuando em defesa de iniciativas voltadas ao desenvolvimento econômico e social, à melhoria dos serviços públicos e à qualidade de vida da população de Solânea. Sua atuação parlamentar é pautada pelo diálogo, pela representatividade popular e pelo compromisso permanente com o progresso sustentável do município.</p>
             </div>
         </div>
     </section>
-    
+    <section class="grafico-barras">
+        <div class="container">
+            <h5>Matérias (Quantidade)</h5>
+            <div class="grafico-areas">
+                <canvas id="graficoQuantidade"></canvas>
+                <!--Conteudo-->
+            </div>
+        </div>
+    </section>
 
 
 
@@ -212,6 +304,7 @@
 
 
     </main>
+    <script src="js.js"></script>
 </body>
 
 </html>

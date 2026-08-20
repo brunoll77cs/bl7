@@ -1,8 +1,7 @@
 // ===== HEADER FUNDIR AO ROLAR =====
 window.addEventListener('scroll', function() {
-    const header = document.querySelector('.site-header');
-    const logoImg = document.querySelector('.logo-box img');
-    const navLogo = document.querySelector('.nav-logo');
+    const header = document.querySelector('.cabecalho');
+    const logoImg = document.querySelector('.cabecalho .logo');
     
     if (header && logoImg) {
         if (window.scrollY > 80) {
@@ -16,9 +15,9 @@ window.addEventListener('scroll', function() {
 });
 
 // ===== MOBILE MENU =====
-const navToggle = document.querySelector('.nav-toggle');
-const mainNav = document.querySelector('.main-nav');
-const dropdownItems = document.querySelectorAll('.has-dropdown');
+const navToggle = document.querySelector('.menu-btn');
+const mainNav = document.querySelector('.menu');
+const dropdownItems = document.querySelectorAll('.item-menu');
 
 if (navToggle && mainNav) {
     navToggle.addEventListener('click', function() {
@@ -48,14 +47,14 @@ dropdownItems.forEach(function(item) {
 });
 
 // ===== BOTÃO VOLTAR AO TOPO =====
-const backToTop = document.querySelector('.back-to-top');
+const backToTop = document.querySelector('.topo');
 
 window.addEventListener('scroll', function() {
     if (backToTop) {
         if (window.scrollY > 300) {
-            backToTop.classList.add('show');
+            backToTop.classList.add('mostrar');
         } else {
-            backToTop.classList.remove('show');
+            backToTop.classList.remove('mostrar');
         }
     }
 });
@@ -70,8 +69,8 @@ if (backToTop) {
 }
 
 // ===== CARROSSEL (Exemplo Simples) =====
-const heroImages = document.querySelectorAll('.hero-art img');
-const dots = document.querySelectorAll('.hero-dots span');
+const heroImages = document.querySelectorAll('.hero-img img');
+const dots = document.querySelectorAll('.hero-pontos span');
 let currentSlide = 0;
 
 function showSlide(index) {
@@ -90,8 +89,8 @@ if (heroImages.length > 0) {
     showSlide(0);
 
     // Navegação
-    const prevBtn = document.querySelector('.hero-nav-btn.prev');
-    const nextBtn = document.querySelector('.hero-nav-btn.next');
+    const prevBtn = document.querySelector('.hero-btn.prev');
+    const nextBtn = document.querySelector('.hero-btn.next');
 
     if (prevBtn && nextBtn) {
         prevBtn.addEventListener('click', function() {
@@ -181,5 +180,30 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         
         grid.appendChild(card);
+    });
+});
+
+// ===== ABAS DO PERFIL DO VEREADOR =====
+const tabLinks = document.querySelectorAll('.abas-menu a');
+const tabContents = document.querySelectorAll('.aba-conteudo');
+
+tabLinks.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        const targetId = link.getAttribute('href');
+        const target = document.querySelector(targetId);
+
+        if (!target) return;
+
+        tabLinks.forEach(function(item) {
+            item.classList.remove('aba-ativa');
+        });
+        tabContents.forEach(function(content) {
+            content.classList.remove('ativo');
+        });
+
+        link.classList.add('aba-ativa');
+        target.classList.add('ativo');
     });
 });
